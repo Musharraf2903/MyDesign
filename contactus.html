@@ -1,0 +1,62 @@
+<?php
+include_once 'submit.php'
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Website - Contact</title>
+  <link rel="stylesheet" type="text/css" href="contact.css">
+  <script src='https://www.google.com/recaptcha/api.js'> </script>
+  <script type="text/javascript">
+
+      function show() {
+       // Prevent the default form submission behavior
+  
+ 
+           alert("Thank You for Contacting Us we will reach out to you soon");
+
+};
+
+  </script>
+</head>
+<body>
+  <header class="header">
+    <h1>CONNECT WITH US !  </h1>
+    <h4>Contact form with google reCaptcha</h4>
+  </header>
+  <div class="navbar"> 
+    <a id="hover" href="home.html">HOME</a>
+     <a id="hover2" href="AboutUs.html"> ABOUT-US</a>
+     <a id="hover3" href="contactus.html">CONTACTUS</a>
+     <a id="hover" href="News.html">News</a>
+    
+     </div>
+
+
+  <div class="contactForm">
+    <h2>Contact Us</h2>
+    <form id="contact" method="POST" action="">
+     
+      <input type="text" id="name" name="name" placeholder="Enter Your Name" required><br>
+      <input type="text" id="phone" name="name" placeholder="Enter Your Mobile Number" required><br>
+      <input type="email" id="email" name="email" placeholder="Enter your Email" required><br>
+      <textarea id="message" name="message" placeholder="Enter Your Message"required></textarea><br>
+      <div class="g-recaptcha" data-sitekey="6Lfd0SgmAAAAAHK0wGm41fuiLVZnNOuM1E7-SxNP"></div>
+      <input type="submit" id="submit" value=" Send Message" class="submit-btn" onclick='show()'>
+    
+
+    </form>
+    <div class="status">
+      
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2023 Musharraf's Website. All rights reserved | satkutmusharraf@gmail.com</p>
+      </div>
+      </footer>
+</body>
+</html>

@@ -1,0 +1,95 @@
+
+
+
+
+
+body{
+    margin: 17px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+.contactForm
+{
+    box-shadow: 5px 4px 2px 0px rgb(120 116 116);
+    margin: 50px auto;
+    width: 350px;
+    text-align: center;
+}
+.contactForm h2
+{
+   background: #beb3ff73;
+   margin-top: 0;
+   padding: 10px;
+
+}
+.contactForm input
+{
+    display: block;
+    width: 90%;
+    margin: 7px auto;
+    padding: 10px;
+
+}
+.contactForm textarea
+{     width: 320px;
+    margin: 5px auto;
+    padding: 9px;
+    height: 69px;
+}
+.submit-btn
+{
+  cursor: pointer;
+  width: 125px !important;
+  margin-left: 6px !important;
+}
+.hover{
+    background-color:yellow;
+  
+  }
+  #hover:hover{
+    background-color:rgb(212, 116, 148);
+  }
+  #hover2:hover{
+    background-color: lightseagreen;
+  }
+  
+  #hover3:hover{
+    background-color: rgb(236, 183, 118);
+  }
+ 
+.navbar a {
+    float: left;
+    display: block;
+    color: rgba(12, 15, 14, 0.991);
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration:underline ,rgb(111, 4, 241);
+  }  
+.navbar {
+    overflow: hidden;
+    background-color: rgb(147, 202, 245);
+  }
+  .header {
+    background-color: #123554;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+  .footer-container {
+    background-color: #6fb7f3;
+    color: #fff;
+    padding: 20px;
+    font-style:oblique;
+    text-align: center;
+  }
+  
+  .footer-container p {
+    margin: 0;
+  }
+.g-recaptcha{
+    margin: 10px 20px;
+  }

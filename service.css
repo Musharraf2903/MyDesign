@@ -1,0 +1,64 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+  }
+  
+  .container .heading{
+    width: 50%;
+    padding-bottom: 50px;
+  }
+  .container .heading h3{
+    font-size: 3em;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #222;
+    
+  }
+  .header {
+      background-color: #eef5f2df;
+      color: #0d0c0c;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 36px;
+      text-align: center;
+    }
+    .hover{
+        background-color:yellow;
+      
+      }
+      #hover:hover{
+        background-color:rgb(212, 116, 148);
+      }
+      #hover2:hover{
+        background-color: lightseagreen;
+      }
+      
+      #hover3:hover{
+        background-color: rgb(236, 183, 118);
+      }
+     
+      .navbar a {
+        float: left;
+        display: block;
+        color: rgba(12, 15, 14, 0.991);
+        text-align: center;
+        padding: 10px 15px;
+        text-decoration:underline ,rgb(111, 4, 241);
+      }  
+      .navbar {
+        overflow: hidden;
+        background-color: rgb(147, 202, 245);
+      }
+    
+  
+      
+      #service-slider {
+        max-width: 600px;
+        margin: 0 auto;
+      }

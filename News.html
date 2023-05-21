@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>News Page</title>
+    <link rel="stylesheet" type="text/css" href="news.css">
+</head>
+<body>
+    <header class="header">
+        <h1>News</h1>
+        <h3>Fetching latest news using API </h3>
+      </header>
+      <div class="navbar"> 
+        <a id="hover" href="home.html">HOME</a>
+         <a id="hover2" href="Services.html"> SERVICES</a>
+         <a id="hover3" href="contactus.html">CONTACT-US</a>
+       
+        
+       </div>
+    <div id="news-container"></div>
+    
+    <script>
+        
+        const apiKey = 'f652b47ae7fe439ba9dd5fc1ea29937e';
+        
+        // Fetch news articles from the API
+        fetch(`https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=f652b47ae7fe439ba9dd5fc1ea29937e`)
+            .then(response => response.json())
+            .then(data => {
+                const newsContainer = document.getElementById('news-container');
+                
+                // Loop through each article and create HTML elements to display the news
+                data.articles.forEach(article => {
+                    const articleDiv = document.createElement('div');
+                    articleDiv.classList.add('news-article');
+                    
+                    const title = document.createElement('h2');
+                    title.classList.add('news-title');
+                    title.textContent = article.title;
+                    
+                    const description = document.createElement('p');
+                    description.classList.add('news-description');
+                    description.textContent = article.description;
+                    
+                    const source = document.createElement('p');
+                    source.classList.add('news-source');
+                    source.textContent = `Source: ${article.source}`;
+                    
+                    articleDiv.appendChild(title);
+                    articleDiv.appendChild(description);
+                    articleDiv.appendChild(source);
+                    
+                    newsContainer.appendChild(articleDiv);
+                });
+            })
+            .catch(error => {
+                console.log('Error:', error);
+            });
+    </script>
+</body>
+</html>
